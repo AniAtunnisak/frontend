@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Frontend</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form name="formani">
+
+        <table>
+            <h1>FORM LOGIN JS</h1>
+        <tr>
+            <td><label for="username">
+            Username 
+        </label>
+        <input type="text" id="username" required 
+        placeholder="Nama User"/></td>
+        </tr>
+
+        <tr>
+            <td><label for="password">
+            Password 
+        </label>
+        <input type="password" id="password" required
+        placeholder="Kata Sandi"/></td>
+        </tr>
+
+        <tr><td><button type="submit" onclick="masukAkun()">
+            Masuk
+        </button></td></tr>
+        </table>
+    </form>
+
+    <script type="text/javascript">
+        function masukAkun() {
+            var userName = document.getElementById("username").value;
+            var kataSandi = document.getElementById("password").value;
+            if ((userName === "aniatun") && (kataSandi == "asbaan61")) {
+                alert("Terima Kasih!, kamu berhasil login!");
+            }
+            else {
+                alert("Maaf!, kamu gagal login!");
+            }
+        }
+    </script>
+</body>
+</html>
